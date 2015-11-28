@@ -1,0 +1,16 @@
+Source: linuxmuster-sphinx-emacs
+Section: admin
+Priority: optional
+Maintainer: Ruediger Beck <jeffbeck@web.de>
+Build-Depends: debhelper , perl-base, fakeroot
+Standards-Version: 3.5.2
+
+
+
+Package: linuxmuster-sphinx-emacs
+Architecture: all
+Suggests: 
+Pre-Depends:
+Depends: emacs
+Description: Compile linuxmuster-net sphinx documentation
+  Compile linuxmuster-net sphinx documentation

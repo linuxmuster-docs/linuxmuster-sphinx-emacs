@@ -1,0 +1,7 @@
+############################################################
+# Create a package:
+
+
+cd linuxmuster-sphinx-emacs
+dch -i
+make deb
