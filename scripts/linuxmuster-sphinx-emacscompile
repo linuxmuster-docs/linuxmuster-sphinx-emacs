@@ -1,0 +1,3 @@
+#/bin/sh
+cd .. ; make html; firefox --new-window ./build/html/index.html
+ls
