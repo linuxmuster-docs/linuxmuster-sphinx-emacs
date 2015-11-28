@@ -1,3 +1,14 @@
-#/bin/sh
-cd .. ; make html; firefox --new-window ./build/html/index.html
-ls
+#!/bin/sh
+
+case $1 in
+html)
+    cd .. ; make $1; firefox --new-window ./build/html/index.html
+    ;;
+latexpdf)
+    # find out name of pdf file
+    cd .. ; make $1; evince ./build/latex/Installationsleitfaden.pdf
+    ;;
+*)
+    echo "unknown option $1"
+    ;;
+esac
