@@ -5,7 +5,8 @@ html)
     cd .. ; make $1; firefox --new-window ./build/html/index.html
     ;;
 latexpdf)
-    # find out name of pdf file
+    # find out name of pdf file from
+    # latex_documents in conf.py
     cd .. ; make $1; evince ./build/latex/Installationsleitfaden.pdf
     ;;
 *)
